@@ -1,0 +1,66 @@
+# Base inheritable Rubocop config for all ElasticSuite rails apps.
+
+AllCops:
+  TargetRailsVersion: 4.1
+
+Rails:
+  Enabled: true
+
+Rails/DynamicFindBy:
+  Whitelist:
+    - 'find_by_sql'
+    - 'find_by_permissions'
+    - 'find_by_user'
+    - 'find_by_provider_and_uid'
+
+Rails/FindEach:
+  Enabled: false
+
+Layout/AlignHash:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
+
+Layout/FirstArrayElementLineBreak:
+  Enabled: true
+
+Layout/FirstHashElementLineBreak:
+  Enabled: true
+
+Layout/FirstMethodArgumentLineBreak:
+  Enabled: true
+
+Layout/FirstMethodParameterLineBreak:
+  Enabled: true
+
+Layout/IndentArray:
+  EnforcedStyle: consistent
+
+Layout/IndentHash:
+  EnforcedStyle: consistent
+
+Layout/MultilineAssignmentLayout:
+  Enabled: true
+
+Layout/MultilineHashBraceLayout:
+  EnforcedStyle: new_line
+
+Layout/MultilineArrayBraceLayout:
+  EnforcedStyle: new_line
+
+Lint/ParenthesesAsGroupedExpression:
+  Enabled: false
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/AndOr:
+  EnforcedStyle: conditionals
+
+Style/DoubleNegation:
+  Enabled: false
+
+Style/TernaryParentheses:
+  EnforcedStyle: require_parentheses_when_complex
+
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: comma
