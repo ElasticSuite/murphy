@@ -16,6 +16,16 @@ Rails/DynamicFindBy:
 Rails/FindEach:
   Enabled: false
 
+# Unsure whether using `Time.zone.today` would subtly change behavior that we rely on.
+# We can enable this cop in specific projects if we're sure it won't break things.
+Rails/Date:
+  Enabled: false
+
+# Unsure whether using `Time.zone.now` would subtly change behavior that we rely on.
+# We can enable this cop in specific projects if we're sure it won't break things.
+Rails/TimeZone:
+  Enabled: false
+
 Layout/AlignHash:
   EnforcedHashRocketStyle: table
   EnforcedColonStyle: table
