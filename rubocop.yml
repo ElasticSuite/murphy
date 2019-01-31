@@ -60,6 +60,9 @@ Layout/MultilineArrayBraceLayout:
 Lint/ParenthesesAsGroupedExpression:
   Enabled: false
 
+Lint/UnneededDisable:
+  Severity: refactor
+
 Style/AsciiComments:
   Enabled: false
 
